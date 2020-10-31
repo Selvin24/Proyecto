@@ -1,0 +1,59 @@
+
+
+/*Configurar la informacion de la pagina*/
+.cardimg{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+.cardconf{
+    margin: 2%;
+    width: 100%;
+    display: contents;
+}
+.espacio{
+    width: 100%;
+    margin-top: 5%;
+    padding: 0%;
+}
+.tag{
+    
+    margin-top: 2%;
+}
+.text{
+    text-align: justify;
+    width: 97%;
+}
+th td{
+    text-align: center;
+}
+.comen{
+    width: 100%;
+    margin: 2%;
+}
+@media screen and(min-width:300px) and (max-width: 699px) {
+    h2{
+        text-align: center;
+    }
+    .text{
+        width: 230%;
+    }
+    .espacio{
+        padding-right: 1.25rem;
+        width: 100%;
+        padding-right: initial;
+    }
+}
+@media screen and (max-width: 720px) {
+    h2{
+        text-align: center;
+    }
+    .text{
+        width: 100%;
+    }
+    .espacio{
+        padding-right: 1.25rem;
+        width: 100%;
+        padding-right: initial;
+    }
+}
