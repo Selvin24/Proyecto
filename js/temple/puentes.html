@@ -1,0 +1,9 @@
+<div class="card espacio" ng-repeat="puentesfamosos in brig | filter:test">
+    <img ng-src="{{ puentesfamosos.foto}}" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{ puentesfamosos.name }}</h5>
+      <p class="card-text">{{ puentesfamosos.location }}</p>
+      <p class="card-text">Inicio de la construcción: {{ puentesfamosos.pubdate | date }}</p>
+      <a href="#!/photos/{{$index}}" class="btn btn-primary">Leer mas..</a>
+    </div> 
+</div>
