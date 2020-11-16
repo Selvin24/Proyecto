@@ -1,9 +1,26 @@
-app.factory('bridgeInfo', ['$http', function ($http) {
-    return $http.get('https://1drv.ms/u/s!Ai15NKjs0k_Ut2VnRJP-4-m7gseU?e=HS7tSD')
-        .success(function (data) {
-            return data;
-        })
-        .error(function (data) {
-            return data;
-        });
-}]);
+app.factory('services', function ($http) {
+    // return {
+    //     obtenerpuentes: function () {
+    //         var oPromise = $http.get('./js/services/info.json').then(function (response) {
+    //             return response.data;
+    //         });
+    //         return oPromise;
+    //     }
+    // };
+
+    // return $http.get('./js/services/info.json');
+    // var obj = {content:null};
+    // $http.get('./js/services/info.json').success(function(data) {
+    //     obj.content = data;
+    // });    
+
+    // return obj;    
+
+    return $http.get('./js/services/info.json')
+    .success(function(data) {
+      return data;
+    })
+    .error(function(data) {
+      return data;
+    });
+});

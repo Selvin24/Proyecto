@@ -11,23 +11,22 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img ng-src="{{foto}}" class="cardimg" alt="...">
+              <img ng-src="{{puentes.foto}}" class="cardimg" alt="...">
             </div>
             <div class="carousel-item ">
-              <img ng-src="{{foto2}}" class="cardimg" alt="...">
+              <img ng-src="{{puentes.foto2}}" class="cardimg" alt="...">
             </div>
             <div class="carousel-item ">
-              <img ng-src="{{foto3}}" class="cardimg" alt="...">
+              <img ng-src="{{puentes.foto3}}" class="cardimg" alt="...">
             </div>
           </div>
         </div>
-        <!-- <img class="card-img-top cardimg" src="../img/background.jpg" alt="Card image cap">     -->
       </div>
       <div class="col-md-6">
         <div class="card-body espacio">
-          <h2>{{url}}</h2>
+          <h2>{{puentes.name}}</h2>
           <p class="card-text text">
-            {{description}}
+            {{puentes.descrption}}
           </p>
         </div>
       </div>
@@ -45,9 +44,9 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{location}}</td>
-            <td>{{longest}}</td>
-            <td>{{tallest}}</td>
+            <td>{{puentes.location}}</td>
+            <td>{{puentes.longest}}</td>
+            <td>{{puentes.tallest}}</td>
           </tr>
         </tbody>
       </table>
@@ -64,10 +63,10 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{highest}}</td>
-            <td>{{oldest}}</td>
-            <td>{{capacity}}</td>
-            <td>{{place}}</td>
+            <td>{{puentes.highest}}</td>
+            <td>{{puentes.oldest}}</td>
+            <td>{{puentes.capacity}}</td>
+            <td>{{puentes.place}}</td>
           </tr>
         </tbody>
       </table>
