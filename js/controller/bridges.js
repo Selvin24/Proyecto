@@ -1,5 +1,5 @@
-app.controller('bridges', ['$scope','bridgeInfo', function($scope,bridgeInfo){
-    bridgeInfo.success(function(data){
-        $scope.bridgeInfo = data;
-    })
-}])
+app.controller('bridges', function ($scope, $http) {
+     $http.get('./js/services/info.json').then(function (response) {
+          $scope.myData = response.data;
+     });
+});

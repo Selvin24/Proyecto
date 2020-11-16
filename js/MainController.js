@@ -193,5 +193,4 @@ app.controller('MainController', ['$scope','$routeParams', function($scope, $rou
     $scope.oldest= $scope.brig[0].oldest;
     $scope.capacity= $scope.brig[1].capacity;
     $scope.place = $scope.brig[1].place;
-    var cat = $routeParams.id;    
   }]); 
