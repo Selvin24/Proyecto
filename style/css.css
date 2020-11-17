@@ -17,7 +17,6 @@
     padding: 0%;
 }
 .tag{
-    
     margin-top: 2%;
 }
 .text{
@@ -30,8 +29,23 @@ th td{
 .comen{
     width: 100%;
     margin: 2%;
+    display: inline-flex;
 }
-@media screen and(min-width:300px) and (max-width: 699px) {
+.inicio{
+    z-index: 2;
+    margin-left: -100px;   
+    margin-top: 15%;
+}
+.home{
+    margin: 2%;
+}
+.espacio2{
+    padding-right: 0%;    
+}
+@media screen and (min-width: 500px) and (max-width: 779px) {
+    .home{
+        margin: 2%;
+    }
     h2{
         text-align: center;
     }
@@ -43,8 +57,25 @@ th td{
         width: 100%;
         padding-right: initial;
     }
+    .inicio{
+        width: 100%;    
+        
+        z-index: 2;
+        margin-left: 0%;   
+        margin-top: 20px;
+    }
+    .espacio2{
+        padding-right: 0%;      
+        padding-left: 30%;
+    }
+    .scroll{
+        overflow-x: scroll;
+    }
 }
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 780px) and (max-width: 1080px){
+    .home{
+        margin: 2%;
+    }
     h2{
         text-align: center;
     }
@@ -56,4 +87,16 @@ th td{
         width: 100%;
         padding-right: initial;
     }
+    .inicio{
+        width: 100%;    
+        
+        z-index: 2;
+        margin-left: 0%;   
+        margin-top: 20px;
+    }
+    .espacio2{
+        padding-right: 0%;
+        padding-left: 20%;
+    }
+    
 }
