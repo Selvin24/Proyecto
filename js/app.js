@@ -10,6 +10,10 @@ app.config(function($routeProvider) {
         controller:"info",
         templateUrl : "./js/temple/info.html"
     })
+    .when("/contactUs/", {
+        controller:"info",
+        templateUrl : "./js/temple/form.html"
+    })
     .otherwise({ 
         redirectTo: '/' 
       }); 

@@ -6,6 +6,9 @@
     height: auto;
     padding-top: 30px;
 }
+.pic{
+    padding-top: 45px;
+}
 .cardconf{
     margin: 2%;
     width: 100%;
@@ -42,6 +45,55 @@ th td{
 .espacio2{
     padding-right: 0%;    
 }
+
+.cat{
+    display: -webkit-box;
+    overflow-x: scroll;
+    
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+/* scroll filter*/
+.contenedor {
+
+    width:100%;
+    max-width: 100%;
+
+    overflow:auto;
+    box-sizing: border-box;
+    
+}
+.contenedor::-webkit-scrollbar {
+    display: -webkit-box;
+    overflow-x: scroll;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+    width:10px;
+    overflow-x: scroll;
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.contenedor::-webkit-scrollbar:horizontal {
+    height: 2px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+    background-color: #d42323;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
 @media screen and (min-width: 500px) and (max-width: 779px) {
     .home{
         margin: 2%;
