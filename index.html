@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-        <!-- Include the core AngularJS library -->
+
+    <!-- Include the core AngularJS library -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 
     <!-- Include the AngularJS routing library -->
@@ -29,7 +29,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">
-            <img id="logo" src="./img/logo2.34-8.png" width="185px" height="55px">
+                <img id="logo" src="./img/logo2.34-8.png" width="185px" height="55px">
             </a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -45,23 +45,124 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <input ng-model="category" class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
     </head>
-    
+
     <div class="container">
         <div class="main">
-            <div class="row">                
+            <div class="row">
                 <div class="col-sm-12">
                     <!-- Aqui va la info repeat de los puentes  -->
                     <div ng-view></div>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark footer">
+        <div style="background-color: #3010e6;">
+            <div class="container">
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Get connected with us on social networks!</h6>
+                    </div>                    
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">                                                
+                        <!-- Facebook -->
+                        <a class="tw-ic">
+                            <img src="./img/face.svg" style="padding: 1%; width: 50px;">
+                        </a>
+                        <!--Linkedin -->
+                        <a class="gplus-ic">
+                            <img src="./img/linkedin.svg" style="padding: 1%; width: 50px;">
+                        </a>                        
+                        <!-- Twitter -->
+                        <a class="li-ic">
+                            <img src="./img/twitter.svg" style="padding: 1%; width: 50px;">
+                        </a>
+                        <a>
+                            <button onclick="window.print()" type="button" class="btn btn-outline-light">Print Page</button>
+                        </a>
+                    </div>
+                    
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </div>
+        </div>
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">Company name</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum
+                        dolor sit amet,
+                        consectetur
+                        adipisicing elit.</p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Products</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Bootstrap</a>
+                    </p>
+                    <p>
+                        <a href="#!">Javascript</a>
+                    </p>
+                    <p>
+                        <a href="#!">AngularJS</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bootstrap Angular</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <img src="./img/locationwhite.svg" style="padding: 1%;" class="icon"> Honduras, Cortes, San Pedro Sula</p>
+                    <p>
+                        <img src="./img/email.svg" style="padding: 1%;" class="icon"> info@example.com</p>
+                    <p>
+                        <img src="./img/phone.svg" style="padding: 1%;" class="icon"> +504 9485-14566</p>
+                    <p>
+                        <img src="./img/phone.svg" style="padding: 1%;" class="icon"> +504 9851-21556</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#">Bootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
     <!-- Modules -->
     <script src="./js/app.js"></script>
 

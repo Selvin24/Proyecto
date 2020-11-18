@@ -1,27 +1,31 @@
 <div class="main" ng-controller="bridges">
   <div class="row">
     <div class="col-sm-12">
-      <div class="contenedor cat" >
-        <ul class="list-group list-group-horizontal"ng-repeat="cat in myData">
-          <li class="list-group-item">{{cat.categoria}}</li>&nbsp;&nbsp;
+      <div class="contenedor cat">
+
+        <ul class="list-group list-group-horizontal" ng-repeat="cat in myData">
+          <li type="button" ng-model="category" ng-click="categoryFun($index)" class="list-group-item">{{cat.categoria}}
+          </li>&nbsp;&nbsp;
         </ul>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-3">
-      <categoria-app></categoria-app>
-    </div>
+    
     <div class="col-sm-9">
-      <div class="card espacio" ng-repeat="puentesfamosos in myData">
+      <!-- aqui esra ca -->
+      <div class="card espacio" ng-repeat="puentesfamosos in myData | filter:category">
         <img ng-src="{{ puentesfamosos.foto}}" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">{{ puentesfamosos.name }}</h5>
-          <p class="card-text">{{ puentesfamosos.location }}</p>
-          <p class="card-text">Inicio de la construcción: {{ puentesfamosos.pubdate | date }}</p>
-          <a href="#/photos/{{$index}}" class="btn btn-primary">Leer mas..</a>
+          <p class="card-text"><img class="icon" src="./img/location.svg">{{ puentesfamosos.location }}</p>
+          <p class="card-text"><img class="icon" src="./img/filter.svg">Category: {{ puentesfamosos.categoria}}</p>
+          <a href="#/photos/{{$index}}" class="btn btn-primary">Read More<img class="icon" src="./img/right.svg"></a>
         </div>
       </div>
+    </div>
+    <div class="col-sm-3">
+      <categoria-app></categoria-app>
     </div>
   </div>
 </div>

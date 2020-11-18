@@ -15,9 +15,26 @@
             <input id="1" type="text" ng-model="test2" class="form-control solo-numero" value="" placeholder="Enter only numbers"/>
         </div>
     </div>
-
+    <br>
     <div class="form-group row scroll" >
         <img class="icon" src="./img/aeroplane.svg"> Flight
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Place</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="vuelo in vuelos | filter:test | filter:test2">
+                <tr>
+                    <td>{{vuelo.destino}}</td>
+                    <td>Lp. {{vuelo.costo}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="form-group row scroll" >
+        <img class="icon" src="./img/bus.svg"> Bus
         <table class="table table-hover">
             <thead>
                 <tr>
