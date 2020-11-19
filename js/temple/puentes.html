@@ -1,6 +1,7 @@
 <div class="main" ng-controller="bridges">
   <div class="row">
     <div class="col-sm-12">
+      <!-- We show the bar of the different categories -->
       <div class="contenedor cat">
         <ul class="list-group list-group-horizontal" ng-repeat="cat in myData">
           <li type="button" ng-model="category" ng-click="categoryFun($index)" class="list-group-item">{{cat.categoria}}
@@ -10,9 +11,8 @@
     </div>
   </div>
   <div class="row">
-
     <div class="col-sm-9">
-      <!-- aqui esra ca -->
+      <!-- Through the ng-repeat the list of the different bridges is made -->
       <div class="card espacio" ng-repeat="puentesfamosos in myData | filter:category">
         <img ng-src="{{ puentesfamosos.foto}}" class="card-img-top">
         <div class="card-body">
@@ -23,12 +23,9 @@
         </div>
       </div>
     </div>
+    <!-- This part shows a list of flights and bus with their prices -->
     <div class="col-sm-3">
       <br>
-      <!-- <form class="form-inline" style="padding-top: 18%">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>&nbsp;
-        <input ng-model="category" style="width: 170px;" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">        
-      </form> -->
       <categoria-app></categoria-app>
     </div>
   </div>

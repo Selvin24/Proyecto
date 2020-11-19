@@ -21,7 +21,7 @@
 </head>
 
 <body ng-app="puentes">
-
+    <!-- We show the page navigation bar -->
     <head>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
@@ -31,7 +31,7 @@
             <a class="navbar-brand" href="#">
                 <img id="logo" src="./img/logo2.34-8.png" width="185px" height="55px">
             </a>
-
+            <!-- The different links on the page -->
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
@@ -44,6 +44,7 @@
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
+                <!-- The search bar -->
                 <form class="form-inline my-2 my-lg-0">
                     <input ng-model="category" class="form-control mr-sm-2" type="search" placeholder="Search"
                         aria-label="Search">
@@ -57,7 +58,7 @@
         <div class="main">
             <div class="row">
                 <div class="col-sm-12">
-                    <!-- Aqui va la info repeat de los puentes  -->
+                    <!-- This is where the different screens of the page are displayed -->
                     <div ng-view></div>
                     <br>
                     <br>
@@ -132,8 +133,7 @@
                 </div>
                 <!-- Grid column -->
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">                    
                     <h6 class="text-uppercase font-weight-bold">Contact</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
@@ -171,9 +171,6 @@
 
     <!-- Directives -->
     <script src="./js/categoriaApp.js"></script>
-
-    <!-- Javascript -->
-    <script src="./js/java.js" type="text/javascript"></script>
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
