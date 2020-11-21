@@ -14,6 +14,10 @@ app.config(function($routeProvider) {
         controller:"info",
         templateUrl : "./js/temple/form.html"
     })
+    .when("/about/", {
+        controller:"info",
+        templateUrl : "./js/temple/about.html"
+    })
     .otherwise({ 
         redirectTo: '/' 
       }); 

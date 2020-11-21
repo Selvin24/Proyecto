@@ -80,10 +80,7 @@ app.directive("categoriaApp", function(){
           destino:'Munich',
           costo:'32,323',
         },
-      ],       
-      scope.categorias = function(index) { 
-        scope.buttonText = scope.articles[index].nombre;
-      }
+      ]
     }
       };
 })
